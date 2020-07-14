@@ -1,0 +1,18 @@
+spring:
+  security:
+    basic:
+      enabled: true
+    user:
+      name: admin
+      password: admin123
+server:
+  port: 9090
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:9090/eureka
+  server:
+    enableSelfPreservation: false

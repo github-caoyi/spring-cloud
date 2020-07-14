@@ -1,0 +1,13 @@
+server:
+  port: 9290
+spring:
+  application:
+    name: consumer1
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka
+logging:
+  level:
+    root: INFO
