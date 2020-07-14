@@ -10,7 +10,7 @@ import org.springframework.web.client.RestTemplate;
 /**
  * @Author cy
  * @Date 2020/7/14 9:35
- * @Description
+ * @Description 使用了RestTemplate进行访问生产者
  **/
 @RestController
 public class HelloController {

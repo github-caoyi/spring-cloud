@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @Author cy
  * @Date 2020/7/13 17:15
- * @Description
+ * @Description 使用了Feign进行访问生产者
  **/
 @RestController
 @RequestMapping("/user")
