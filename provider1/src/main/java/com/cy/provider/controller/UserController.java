@@ -1,6 +1,8 @@
 package com.cy.provider.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 /**
  * @Author cy
@@ -11,8 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/user")
 public class UserController {
 
-    @RequestMapping("/sayhello")
-    public String sayhello(){
-        return "I`m provider 1 ,Hello consumer!";
+    @RequestMapping(value = "/sayhello",method = RequestMethod.GET)
+    public String sayhello(@RequestParam("consumerName")String name){
+        return "I`m provider 1 ,Hello "+name+" !";
     }
 }

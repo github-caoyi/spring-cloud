@@ -7,7 +7,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 @SpringBootApplication
 @EnableEurekaClient //表明这是一个eureka客户端
-@EnableFeignClients
+@EnableFeignClients //
 public class Consumer2Application {
 
     public static void main(String[] args) {

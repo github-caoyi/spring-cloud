@@ -1,0 +1,14 @@
+server:
+  port: 9293
+spring:
+  application:
+    name: consumer3
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9090/eureka
+logging:
+  level:
+    root: INFO
+

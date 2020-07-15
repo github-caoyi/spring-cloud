@@ -1,4 +1,4 @@
-package com.cy.consumer2.service;
+package com.cy.consumer3.client;
 
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,11 +16,12 @@ public interface UserClient {
 
     /**
      * @Author cy
-     * @Date 2020/7/14 18:18
+     * @Date 2020/7/15 18:18
      * @Description @RequestMapping里的参数限定访问的生产者的具体方法
      * @Param @RequestParam指定传递参数的名称即key，值为形参的值
      * @return
      **/
     @RequestMapping(value = "/sayhello",method = RequestMethod.GET)
     String sayHello(@RequestParam("consumerName") String name);
+
 }

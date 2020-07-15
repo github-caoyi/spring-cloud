@@ -2,7 +2,7 @@ server:
   port: 9191
 spring:
   application:
-    name: provider #所有生产者的此处应用名称相同，eureka配置类ribbon负载均衡策略才会生效
+    name: provider #同一种生产者的此处应用名称相同，eureka配置类ribbon负载均衡策略才会生效
 
 eureka:
   client:
