@@ -9,23 +9,22 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <groupId>com.cy</groupId>
-    <artifactId>provider2</artifactId>
+    <artifactId>zuul</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>provider2</name>
+    <name>zuul</name>
     <description>Demo project for Spring Boot</description>
     <packaging>jar</packaging>
 
     <dependencies>
-        <!--eureka-client 依赖-->
+        <!-- eureka  -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
-        <!--spring-web 依赖(spring-boot 依赖下有默认version)-->
+        <!-- zuul -->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
     </dependencies>
-
 </project>
